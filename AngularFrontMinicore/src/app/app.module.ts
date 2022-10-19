@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { DateFilterPipe } from './pipes/date-filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     DateFilterPipe,
+    NoPageFoundComponent,
   ],
   imports: [
     BrowserModule,
