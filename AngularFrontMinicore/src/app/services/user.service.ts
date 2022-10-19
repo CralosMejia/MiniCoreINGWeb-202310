@@ -8,32 +8,32 @@ import { User } from '../Models/user';
 })
 export class UserService {
 
-  readonly baseURL = 'https://minicoreudla202310camh.onrender.com/';
+  readonly baseURL = 'https://minicoreudla202310camh.onrender.com';
 
   constructor(private _httpClient: HttpClient) {
   }
 
   public getUsers(): Observable<User[]> {
     const url = this.baseURL;
-    return this._httpClient.get<User[]>(`${url}api/users`);
+    return this._httpClient.get<User[]>(`${url}/api/users`);
   }
 
   public getUser(id: any): Observable<User> {
-    const url = `${this.baseURL}api/users/${id}`;
+    const url = `${this.baseURL}/api/users/${id}`;
     return this._httpClient.get<User>(url);
   }
 
   public updateUser(disease: User): Observable<any> {
-    const url = `${this.baseURL}api/users/${disease.id}`;
+    const url = `${this.baseURL}/api/users/${disease.id}`;
     return this._httpClient.put(url, disease);
   }
 
   public addUser(disease: User): Observable<User> {
-    return this._httpClient.post<User>(`${this.baseURL}api/users`, disease);
+    return this._httpClient.post<User>(`${this.baseURL}/api/users`, disease);
   }
 
   deleteUser(id: number): Observable<User> {
-    const url = `${this.baseURL}api/users/${id}`;
+    const url = `${this.baseURL}/api/users/${id}`;
     return this._httpClient.delete<User>(url);
   }
 
@@ -43,6 +43,6 @@ export class UserService {
       // if not search term, return empty hero array.
       return of([]);
     }
-    return this._httpClient.get<User[]>(`${this.baseURL}api/users/?name=${term}`);
+    return this._httpClient.get<User[]>(`${this.baseURL}/api/users/?name=${term}`);
   }
 }
