@@ -32,4 +32,4 @@ yarn && yarn build
 ```
 
 ## Proyecto en la nube
-[MiniCore](https://minicoreudla202310camh-front.onrender.com/landing)
+[MiniCore](https://minicoreudla202310camh-front.onrender.com)
