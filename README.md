@@ -6,34 +6,26 @@
 
 ### Información general
 ***
-El proyecto está orientado al entendimiento, creación y manejo de un data warehouse mediante la implementación de un ejemplo sencillo con una base de datos de apenas 7 tablas, La información necesaria para llenar las tablas se extrajo de archivos .csv. 
+El proyecto está orientado a replicar el proyecto de estudiantes de semestres pasados y deployar en algun hosting.
+El proyecto original es de Martin Galvez [Repositorio proyecto original](https://github.com/MGA1398/MiniCore)
 
 ## Tecnologias.
 ***
 Las tecnologías que se usaron para el proyecto son:
-* [Python](https://www.python.org): Version 3.10.8 
-* [MYSQL](https://www.mysql.com): Version 5.7.38
+#### BACKEND
+* [MongoDB](https://www.mongodb.com): Version 6.0.2 
+* [Node](https://nodejs.org/es/): Version 16.17.1
+* [Express](https://expressjs.com/es/): Version 4.18.2
+
+#### FRONTEND
+* [Angular](https://angular.io): Version 14.2.6
+
+
 
 ## Instalación
 ***
-Para la instalación lo único que tiene que hacer es descargar el programa.
+Para la instalación lo único que tiene que hacer es descargar el programa y ejecutar el siguiente comando en ambos proyectos.
+```
+yarn && yarn build
+```
 
-## Dependencias Utilizadas.
-Para el correcto funcionamiento del programa se debe instalar las siguientes dependencias.
-
-
-### Conexión a la base de datos.
-```
-pip install sqlalchemy
-```
-```
-pip install PyMySQL
-```
-### Archivo Propiedades.
-```
-pip install jproperties
-```
-### Pandas
-```
-pip install pandas
-```
