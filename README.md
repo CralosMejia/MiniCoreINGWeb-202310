@@ -2,7 +2,6 @@
 1. [Información general](#información-general)
 2. [Tenologias](#tecnologias)
 3. [Instalación](#instalación)
-3. [Dependencias Utlizadas](#dependencias-utilizadas)
 
 ### Información general
 ***
