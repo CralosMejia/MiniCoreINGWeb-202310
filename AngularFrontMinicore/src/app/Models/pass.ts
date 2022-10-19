@@ -1,5 +1,5 @@
 export interface Pass {
-    id: string;
+    _id: string;
     type: string;
     quota: number;
     passes: number;

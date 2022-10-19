@@ -55,15 +55,15 @@
       <td>{{ user.expiration_date | date : "longDate":"es:Es" }}</td>
       <td
         *ngFor="let pass of passes"
-        [ngClass]="{ 'd-none': pass.id != user.pass_id }"
+        [ngClass]="{ 'd-none': pass._id != user.pass_id }"
       >
-        <p *ngIf="pass.id == user.pass_id">{{ pass.passes }}</p>
+        <p *ngIf="pass._id == user.pass_id">{{ pass.passes }}</p>
       </td>
       <td
         *ngFor="let pass of passes"
-        [ngClass]="{ 'd-none': pass.id != user.pass_id }"
+        [ngClass]="{ 'd-none': pass._id != user.pass_id }"
       >
-        <p *ngIf="pass.id == user.pass_id">
+        <p *ngIf="pass._id == user.pass_id">
           {{ this.remainingPasses(user.purchase_date, pass.passes, this.from) }}
         </p>
       </td>

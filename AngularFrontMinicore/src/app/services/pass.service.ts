@@ -24,7 +24,7 @@ export class PassService {
   }
 
   public updatePass(disease: Pass): Observable<any> {
-    const url = `${this.baseURL}/api/passes/${disease.id}`;
+    const url = `${this.baseURL}/api/passes/${disease._id}`;
     return this.httpClient.put(url, disease);
   }
 

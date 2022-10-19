@@ -30,12 +30,19 @@ export class LandingComponent implements OnInit {
 
   getPasses(): void{
     this.passService.getPasses()
-      .subscribe(passes=> this.passes = passes);
+      .subscribe(passes=> {this.passes = passes
+      
+        this.passes.forEach(pass => console.log(pass._id))
+    });
   }
 
   getUsers(): void{
     this.userService.getUsers()
-      .subscribe(users=> this.users = users);
+      .subscribe(users=> {this.users = users
+    console.log(this.users);
+
+      });
+
   }
   getPass(id: string): string {
     this.passService.getPass(id)
