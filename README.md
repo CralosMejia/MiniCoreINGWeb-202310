@@ -2,6 +2,8 @@
 1. [Información general](#información-general)
 2. [Tenologias](#tecnologias)
 3. [Instalación](#instalación)
+4. [Proyecto en la nube](#proyecto-en-la-nube)
+
 
 ### Información general
 ***
@@ -26,5 +28,8 @@ Las tecnologías que se usaron para el proyecto son:
 Para la instalación lo único que tiene que hacer es descargar el programa y ejecutar el siguiente comando en ambos proyectos.
 ```
 yarn && yarn build
+
 ```
 
+## Proyecto en la nube
+[MiniCore](https://minicoreudla202310camh-front.onrender.com/landing)
