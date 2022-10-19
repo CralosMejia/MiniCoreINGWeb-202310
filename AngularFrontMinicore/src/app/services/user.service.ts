@@ -8,7 +8,7 @@ import { User } from '../Models/user';
 })
 export class UserService {
 
-  readonly baseURL = 'https://minicoreudla202310camh.onrender.com';
+  readonly baseURL = 'https://minicoreudla202310camh.onrender.com/';
 
   constructor(private _httpClient: HttpClient) {
   }
