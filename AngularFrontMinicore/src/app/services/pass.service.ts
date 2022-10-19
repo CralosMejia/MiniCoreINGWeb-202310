@@ -8,7 +8,7 @@ import { Pass } from '../Models/pass';
 })
 export class PassService {
 
-  readonly baseURL = 'https://minicoreudla202310camh.onrender.com';
+  readonly baseURL = 'https://minicoreudla202310camh.onrender.com/';
 
   constructor(private httpClient: HttpClient) {
   }
